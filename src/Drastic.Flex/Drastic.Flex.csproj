@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net7.0-ios</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+    <IsPackable>true</IsPackable>
+    <Description>Binding of Flex for .NET iOS Projects</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+		<NativeReference Include="..\Frameworks\FLEX.xcframework">
+			<Kind>Framework</Kind>
+			<SmartLink>False</SmartLink>
+		</NativeReference>
+	</ItemGroup>
+</Project>

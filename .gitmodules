@@ -1,0 +1,3 @@
+[submodule "external/FLEX"]
+	path = external/FLEX
+	url = https://github.com/FLEXTool/FLEX.git
